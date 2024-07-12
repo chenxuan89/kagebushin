@@ -517,7 +517,33 @@
         }
     </style>
 </head>
- 
+ 	<style>
+.not-found {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    z-index: 9999999999;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    .not-found {
+        display: block;
+    }
+
+    html, body {
+        overflow: hidden;
+    }
+}
+</style>
+<div class="not-found">404 Error - Page Not Found</div>
 <body>
     <header>
         <amp-img id="image" class="animated tada infinite slower" src="https://madaniy.com/img/banner-kamboja.jpg"
