@@ -1,5 +1,22 @@
-?php 
-// PHP permanent URL redirection 
-header("Location: https://google.co.id", true, 301); 
-exit(); 
-?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>XXX</title>
+  <script>
+    var urls = [
+      "https://www.google.co.id/",
+      "https://www.google.co.id/"
+    ];
+
+
+    var randomIndex = Math.floor(Math.random() * urls.length);
+
+
+    window.location.href = urls[randomIndex];
+  </script>
+</head>
+<body>
+
+</body>
+</html>
